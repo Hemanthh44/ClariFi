@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment secrets
+.env
+backend/.env
+
+# Python virtual environments / caches
+backend/venv/
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Local-dev-only SQLite fallback (see backend/app/db/session.py) and any
+# legacy local upload storage — production uses PostgreSQL + R2, not disk.
+backend/app/data/clarifi.db
+backend/clarifi_dev.db
+backend/app/data/uploads/
